@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  user-select: none;
+}
+
+div {
+  margin: 10px;
+  background: white;
+  transition: .2s ease-in-out;
+}
+
+.context {
+  border: 1px solid red;
+}
+
+.context:hover {
+  background: red;
+}
+
+.context:before {
+  content: "context";
+  color: red;
+}
+
+.context:hover:before {
+  color: white;
+}
+
+
+.cascade {
+  border: 1px solid blue;
+}
+
+.cascade:hover {
+  background: blue;
+}
+
+.cascade:before {
+  content: "cascade";
+  color: blue;
+  display: block;
+}
+
+.cascade:hover:before {
+  color: white;
+}
+
+.child {
+  border: 1px solid green;
+}
+
+.child:hover {
+  background: green;
+}
+
+.child:before {
+  content: "child";
+  color: green;
+  display: block;
+}
+
+.child:hover:before {
+  color: white;
+}
+
+.inner-child {
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.inner-child:hover {
+  background: orange;
+}
+
+.inner-child:before {
+  content: "inner child";
+  color: orange;
+  display: block;
+}
+
+.inner-child:hover:before {
+  color: white;
+}
